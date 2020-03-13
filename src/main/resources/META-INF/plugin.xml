@@ -18,7 +18,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      V. 1.5 features:<br>
+      V. 1.5 features (updated by Doan Sang):<br>
       <ul>
         <li><em>Intellij IDEA 19 compatibility</em></li>
         <li><em>Fix UI</em></li>
@@ -28,7 +28,7 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="19"/>
+    <idea-version since-build="193"/>
 
 
     <depends>com.intellij.modules.lang</depends>

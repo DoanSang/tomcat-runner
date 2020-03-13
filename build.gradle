@@ -12,7 +12,7 @@ plugins {
     id 'org.jetbrains.intellij' version '0.4.16'
 }
 
-version '1.0-SNAPSHOT'
+version '1.5'
 
 sourceCompatibility = 1.8
 
@@ -36,6 +36,9 @@ intellij {
 
 patchPluginXml {
     changeNotes """
-      <em>Intellij IDEA 19 compatibility</em>
-      <em>Fix UI</em>"""
+      V. 1.5 features (updated by Doan Sang):<br>
+      <ul>
+        <li><em>Intellij IDEA 19 compatibility</em></li>
+        <li><em>Fix UI</em></li>
+      </ul>"""
 }
