@@ -4,9 +4,12 @@
     <rowspec value="center:d:noGrow"/>
     <colspec value="fill:d:grow"/>
     <constraints>
-      <xy x="20" y="20" width="554" height="402"/>
+      <xy x="20" y="20" width="556" height="420"/>
     </constraints>
-    <properties/>
+    <properties>
+      <minimumSize width="556" height="260"/>
+      <preferredSize width="695" height="260"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="d33f1" layout-manager="FormLayout">
@@ -22,6 +25,14 @@
         <rowspec value="top:3dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <colspec value="fill:d:noGrow"/>
         <colspec value="left:4dlu:noGrow"/>
@@ -33,13 +44,16 @@
           <forms/>
         </constraints>
         <properties>
+          <minimumSize width="556" height="260"/>
+          <preferredSize width="695" height="260"/>
+          <requestFocusEnabled value="true"/>
           <toolTipText value=""/>
         </properties>
         <border type="none" title="Tomcat Runner - config."/>
         <children>
           <component id="f1ad1" class="javax.swing.JLabel" binding="firstMsgLabel">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
               <forms defaultalign-horz="false"/>
             </constraints>
             <properties>
@@ -68,17 +82,20 @@
           </component>
           <component id="6a4fd" class="javax.swing.JLabel" binding="webappLabel">
             <constraints>
-              <grid row="4" column="0" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="0" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
               <forms defaultalign-horz="false"/>
             </constraints>
             <properties>
+              <minimumSize width="63" height="28"/>
+              <preferredSize width="63" height="28"/>
+              <requestFocusEnabled value="true"/>
               <text value="Modules:"/>
               <toolTipText value="Double-click in row to delete."/>
             </properties>
           </component>
           <component id="d05a7" class="javax.swing.JLabel" binding="spacerLabel">
             <constraints>
-              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <forms/>
             </constraints>
             <properties>
@@ -89,7 +106,7 @@
           </component>
           <component id="c3534" class="com.intellij.execution.configuration.EnvironmentVariablesComponent" binding="environmentVariables">
             <constraints>
-              <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
               <forms/>
             </constraints>
             <properties>
@@ -99,7 +116,7 @@
           </component>
           <component id="a4aff" class="javax.swing.JLabel" binding="vmArgsLabel">
             <constraints>
-              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
               <forms defaultalign-horz="false"/>
             </constraints>
             <properties>
@@ -108,7 +125,7 @@
           </component>
           <component id="40a52" class="javax.swing.JTextField" binding="vmArgsField">
             <constraints>
-              <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+              <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
               <forms defaultalign-horz="false"/>
@@ -119,7 +136,7 @@
           </component>
           <component id="3011f" class="javax.swing.JLabel" binding="envVarLabel">
             <constraints>
-              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
               <forms defaultalign-horz="false"/>
             </constraints>
             <properties>
@@ -150,15 +167,33 @@
           </component>
           <scrollpane id="c5e2b" binding="tableScrollPane" custom-create="true">
             <constraints>
-              <grid row="4" column="2" row-span="3" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+              <grid row="4" column="2" row-span="10" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms top="0" left="2" bottom="0" right="3" defaultalign-horz="false" defaultalign-vert="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <horizontalScrollBarPolicy value="30"/>
+              <minimumSize width="17" height="50"/>
+              <preferredSize width="440" height="440"/>
+              <verticalScrollBarPolicy value="20"/>
+              <wheelScrollingEnabled value="true"/>
+            </properties>
+            <clientProperties>
+              <html.disable class="java.lang.Boolean" value="false"/>
+            </clientProperties>
             <border type="none"/>
             <children>
               <component id="4c2ec" class="javax.swing.JTable" binding="contexts" custom-create="true">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <alignmentY value="0.5"/>
+                  <autoResizeMode value="2"/>
+                  <editingRow value="-1"/>
+                  <intercellSpacing width="1" height="1"/>
+                  <preferredScrollableViewportSize width="440" height="50"/>
+                  <preferredSize width="160" height="50"/>
+                  <rowHeight value="25"/>
+                  <showHorizontalLines value="true"/>
+                </properties>
               </component>
             </children>
           </scrollpane>

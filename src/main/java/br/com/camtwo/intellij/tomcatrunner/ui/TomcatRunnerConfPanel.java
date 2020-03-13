@@ -81,6 +81,7 @@ public class TomcatRunnerConfPanel implements AddModuleInterface {
     }
 
     public JPanel getMainPanel() {
+
         return mainPanel;
     }
 

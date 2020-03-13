@@ -1,6 +1,7 @@
 package br.com.camtwo.intellij.tomcatrunner.util;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
+import javax.swing.Icon;
 import java.net.URL;
 
 /**
@@ -24,11 +25,11 @@ public class IconUtil {
     }
 
     protected static Icon loadIcon() {
-        URL resource = INSTANCE.getClass().getResource("tomcat.png");
+        URL resource = INSTANCE.getClass().getResource("/icon/tomcatRunner.png");
         return new ImageIcon(resource);
     }
 
-    public Icon getIcon() {
+    public static Icon getIcon() {
         return ICON;
     }
 

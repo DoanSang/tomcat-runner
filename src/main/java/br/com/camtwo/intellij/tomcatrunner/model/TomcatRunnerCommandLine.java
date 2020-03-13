@@ -1,6 +1,5 @@
 package br.com.camtwo.intellij.tomcatrunner.model;
 
-import br.com.camtwo.intellij.tomcatrunner.util.FileUtil;
 import com.intellij.execution.ExecutionException;
 import com.intellij.execution.configurations.JavaCommandLineState;
 import com.intellij.execution.configurations.JavaParameters;
@@ -9,9 +8,6 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.roots.ProjectRootManager;
 import org.jetbrains.annotations.NotNull;
 
-import java.io.IOException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
